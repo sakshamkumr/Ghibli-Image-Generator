@@ -1,7 +1,6 @@
-// api.js
 import axios from "axios";
 
-const API_BASE = "http://localhost:8080/api/v1";
+const API_BASE = "https://ghibli-backend-production-f117.up.railway.app/api/v1";
 
 export const generateFromText = async (prompt, style) => {
   const res = await axios.post(
